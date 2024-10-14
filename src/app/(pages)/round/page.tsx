@@ -1,9 +1,9 @@
-const Home = () => {
+const Round = () => {
   return (
     <h1 className="text-4xl font-bold tracking-tighter">
-      Home
+      Ward Round
     </h1>
   )
 }
 
-export default Home
+export default Round

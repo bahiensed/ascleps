@@ -1,9 +1,11 @@
-const Home = () => {
+import React from 'react'
+
+const Games = () => {
   return (
     <h1 className="text-4xl font-bold tracking-tighter">
-      Home
+      Games
     </h1>
   )
 }
 
-export default Home
+export default Games

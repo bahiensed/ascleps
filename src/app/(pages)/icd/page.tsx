@@ -1,9 +1,11 @@
-const Home = () => {
+import React from 'react'
+
+const ICD = () => {
   return (
     <h1 className="text-4xl font-bold tracking-tighter">
-      Home
+      ICD
     </h1>
   )
 }
 
-export default Home
+export default ICD
