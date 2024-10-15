@@ -20,7 +20,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <div className="container mx-auto pt-16 px-4">
+        <div className="container mx-auto py-16 px-4">
           {children}
         </div>
         <Footer />
