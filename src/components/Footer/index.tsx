@@ -1,51 +1,32 @@
+"use client"
+
 import Link from "next/link";
-import { BookHeart, BookText, Calculator, CirclePlus, CircleUserRound, Gamepad2, Pill, ShoppingBag, SquareActivity, TableProperties, Trophy, UsersRound } from "lucide-react";
+import { usePathname } from 'next/navigation';
+
+import { BookHeart, BookText, Calculator, CirclePlus, Gamepad2, Pill, ShoppingBag, SquareActivity, TableProperties, Trophy, UsersRound } from "lucide-react";
 import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 
+import { footerLinks } from "@/constants";
+
 const Footer = () => {
+  const pathname = usePathname();
+
   return (
     <div className="bottom-0 fixed flex w-full bg-gray-100 whitespace-nowrap z-50">
-      <Link
-        href="/profile/1/"
-        className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-      >
-        <CircleUserRound />
-        <small className="text-xs font-medium">Profile</small>
-      </Link>
+      {footerLinks.map((footerLink) => {
+        const isActive = (footerLink.href.length > 1 && pathname.startsWith(footerLink.href)) || pathname === footerLink.href;
 
-      <Link
-        href="/community"
-        className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-      >
-        <UsersRound />
-        <small className="text-xs font-medium">Community</small>
-      </Link>
-
-      <Link
-        href="/round"
-        className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-      >
-        <SquareActivity />
-        <small className="text-xs font-medium">Round</small>
-      </Link>
-
-      <Link
-        href="/challenges"
-        className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-      >
-        <Trophy />
-        <small className="text-xs font-medium">Challenges</small>
-      </Link>
-
-      <Link
-        href="/marketplace"
-        className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-      >
-        <ShoppingBag />
-        <small className="text-xs font-medium">Marketplace</small>
-      </Link>
-
+        return (
+          <Link
+            key={footerLink.name}
+            href={footerLink.href}
+            className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
+            >
+            <footerLink.icon />
+            <small className="text-xs font-medium">{footerLink.name}</small>
+          </Link>
+        )})}
 
       <div className="border border-gray-300 flex flex-1 flex-col items-center hover:bg-gray-400/40">
         <Drawer>
