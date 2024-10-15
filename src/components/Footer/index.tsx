@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   return (
-    <div className="bottom-0 fixed flex w-full bg-gray-100 whitespace-nowrap">
+    <div className="bottom-0 fixed flex w-full bg-gray-100 whitespace-nowrap z-50">
       <Link
         href="/profile/1/"
         className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
