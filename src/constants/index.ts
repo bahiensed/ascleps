@@ -1,8 +1,26 @@
 import { BookHeart, BookText, Calculator, CirclePlus, CircleUserRound, Gamepad2, Pill, ShoppingBag, SquareActivity, TableProperties, Trophy, UsersRound } from "lucide-react";
 
-export const connections = []
+export const words: string[] = [
+  "Aprender", "Se divertir", "Passar em Concursos",
+  "Estudar", "Jogar", "Ampliar sua Network",
+  "Praticar", "Relaxar", "Turbinar sua Carreira",
+  "Pesquisar", "Se destacar", "Evoluir",
+];
+
+
+export const connections = [
+  { name: "", }  
+]
+
+export const recomendations = []
+
+
+
 
 export const guildes = []
+
+
+
 
 export const footerLinks = [
   { href: "profile", icon: CircleUserRound, name: "Profile" },
@@ -21,4 +39,3 @@ export const moreLinks = [
 ]
 
 
-export const recomendations = []
