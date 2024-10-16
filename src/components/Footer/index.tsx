@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
-import { BookHeart, BookText, Calculator, CirclePlus, Gamepad2, Pill, ShoppingBag, SquareActivity, TableProperties, Trophy, UsersRound } from "lucide-react";
+import { BookHeart, BookText, Calculator, CirclePlus, Gamepad2, Pill, TableProperties } from "lucide-react";
 import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 
