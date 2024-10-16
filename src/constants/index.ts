@@ -10,7 +10,7 @@ export const words: string[] = [
 
 export const connections = [
   {
-    id: "1719348954222",
+    id: "1",
     cover: "/images/users/1719348954222/cover.jpeg",
     avatar: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ybUxQMFdwbEZuSkJCdG41VEVqa0VZTThRSWgifQ?width=80",
     fallback: "DB",
@@ -19,7 +19,7 @@ export const connections = [
     almaMater: "Faculdade de Medicina de Petrópolis"
   },
   {
-    id: "1719348954223",
+    id: "2",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -28,7 +28,7 @@ export const connections = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954225",
+    id: "3",
     cover: "/images/users/1719348954225/cover.png",
     avatar: "/images/users/1719348954225/profile.png",
     fallback: "CB",
@@ -37,7 +37,7 @@ export const connections = [
     almaMater: "Universidade Federal Fluminense"
   },
   {
-    id: "1719348954224",
+    id: "4",
     cover: "/images/users/1719348954224/cover.png",
     avatar: "/images/users/1719348954224/profile.png",
     fallback: "AB",
@@ -46,7 +46,7 @@ export const connections = [
     almaMater: ""
   },
   {
-    id: "1719348954223",
+    id: "5",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -55,6 +55,7 @@ export const connections = [
     almaMater: ""
   },
   {
+    id: "6",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -66,7 +67,7 @@ export const connections = [
 
 export const recomendations = [
   {
-    id: "1719348954223",
+    id: "1719348954227",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -75,7 +76,7 @@ export const recomendations = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954223",
+    id: "1719348954228",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -84,7 +85,7 @@ export const recomendations = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954223",
+    id: "1719348954229",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -93,7 +94,7 @@ export const recomendations = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954223",
+    id: "1719348954230",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -102,7 +103,7 @@ export const recomendations = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954223",
+    id: "1719348954231",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
@@ -111,7 +112,7 @@ export const recomendations = [
     almaMater: "Universidade de Frankfurt"
   },
   {
-    id: "1719348954223",
+    id: "1719348954232",
     cover: "/images/users/1719348954223/cover.png",
     avatar: "https://github.com/shadcn.png",
     fallback: "TA",
