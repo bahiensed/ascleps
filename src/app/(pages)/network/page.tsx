@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { connections, recomendations } from "@/constants"
 
-const Network = () => {
+const NetworkPage = () => {
   return (
     <>
       <h1 className="font-bold text-3xl tracking-tighter">
@@ -121,4 +121,4 @@ const Network = () => {
   )
 }
 
-export default Network
+export default NetworkPage
