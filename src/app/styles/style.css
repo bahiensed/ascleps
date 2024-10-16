@@ -1,0 +1,6 @@
+.red-gradient {
+  background: linear-gradient(45deg, #dc2626 4%, #f87171 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
