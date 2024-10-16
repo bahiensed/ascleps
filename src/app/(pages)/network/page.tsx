@@ -1,12 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Network, Send } from "lucide-react"
+import { Send } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { connections, recomendations } from "@/constants"
 
-const NetworkPage = () => {
+const Network = () => {
   return (
     <>
       <h1 className="font-bold text-3xl tracking-tighter">
@@ -121,4 +121,4 @@ const NetworkPage = () => {
   )
 }
 
-export default NetworkPage
+export default Network
