@@ -1,19 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Send } from "lucide-react"
+import { Network, Send } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { connections, recomendations } from "@/constants"
 
-const Community = () => {
+const Network = () => {
   return (
     <>
       <h1 className="font-bold text-3xl tracking-tighter">
         Network
       </h1>
 
-      <section className="mb-2 mt-6 pr-3 w-full md:w-2/3">
+      <div className="mb-2 mt-6 pr-3 w-full md:w-2/3">
         <div className="flex items-center">
           <div className="font-bold text-xl text-gray-700 tracking-tighter w-2/3">
             Your connections
@@ -22,9 +22,9 @@ const Community = () => {
             See all
           </Link>
         </div>
-      </section>
+      </div>
 
-      <section className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-2/3">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-2/3">
         {connections.map((connection) => (
           <Card className="relative flex flex-col h-full justify-between" key={connection.id}>
             <div>
@@ -62,12 +62,12 @@ const Community = () => {
             </div>
           </Card>
         ))}
-      </section>
+      </div>
 
 
 
 
-      <section className="mb-2 mt-12 pr-3 w-full md:w-2/3">
+      <div className="mb-2 mt-12 pr-3 w-full md:w-2/3">
         <div className="flex items-center">
           <div className="font-bold text-xl text-gray-700 tracking-tighter w-2/3">
             People you may also know
@@ -76,9 +76,9 @@ const Community = () => {
             See all
           </Link>
         </div>
-      </section>
+      </div>
 
-      <section className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-2/3">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-2/3">
         {recomendations.map((recomendation) => (
           <Card className="relative flex flex-col h-full justify-between" key={recomendation.id}>
             <div>
@@ -116,11 +116,9 @@ const Community = () => {
             </div>
           </Card>
         ))}
-      </section>
-
-
+      </div>
     </>
   )
 }
 
-export default Community
+export default Network
