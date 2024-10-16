@@ -15,14 +15,18 @@ const Footer = () => {
   return (
     <div className="bottom-0 fixed flex w-full bg-gray-100 whitespace-nowrap z-50">
       {footerLinks.map((footerLink) => {
-        const isActive = (footerLink.href.length > 1 && pathname.startsWith(footerLink.href)) || pathname === footerLink.href;
+        const isActive = (footerLink.href.length > 1 && pathname.includes(footerLink.href)) || pathname === footerLink.href;
 
         return (
           <Link
             key={footerLink.name}
             href={footerLink.href}
-            className="border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40"
-            >
+            className={`${
+              isActive
+                ? "bg-gray-300 border-gray-400"
+                : ""
+            } border border-gray-300 flex flex-1 flex-col items-center p-1 hover:bg-gray-400/40`}
+          >
             <footerLink.icon />
             <small className="text-xs font-medium">{footerLink.name}</small>
           </Link>
